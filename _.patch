@@ -1,0 +1,51 @@
+Index: app/src/main/java/com/example/chatapp/Message.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/chatapp/Message.java	(date 1578232246024)
++++ app/src/main/java/com/example/chatapp/Message.java	(date 1578232246024)
+@@ -0,0 +1,43 @@
++package com.example.chatapp;
++
++// обьект сообщения. Вся инфа о сообщении
++
++import java.util.Date;
++
++public class Message {
++    public String userName, textMessage;
++    private long messageTime;
++
++    public Message(){}
++
++    public Message(String userName, String textMessage) {
++        this.userName = userName;
++        this.textMessage = textMessage;
++
++        this.messageTime = new Date().getTime();
++    }
++
++    public String getUserName() {
++        return userName;
++    }
++
++    public void setUserName(String userName) {
++        this.userName = userName;//222
++    }
++
++    public String getTextMessage() {
++        return textMessage;
++    }
++
++    public void setTextMessage(String textMessage) {
++        this.textMessage = textMessage;
++    }
++
++    public long getMessageTime() {
++        return messageTime;
++    }
++
++    public void setMessageTime(long messageTime) {
++        this.messageTime = messageTime;
++    }//л
++}
