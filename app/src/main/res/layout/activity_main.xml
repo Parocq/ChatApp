@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:id="@+id/activity_main">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/butnSend"
+        android:id="@+id/butn_send"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#ffffff"
@@ -23,16 +24,15 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/text_layout"
         android:layout_width="match_parent"
-        android:layout_toToOf="@id/butnSend"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@id/butnSend"
+        android:layout_toLeftOf="@id/butn_send"
         >
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/messageField"
+            android:id="@+id/message_field"
             android:hint="Введите сообщение"
             tools:ignore="HardcodedText" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -41,7 +41,7 @@
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/butnSend"
+        android:layout_above="@id/butn_send"
         android:layout_marginBottom="5dp"
         android:id="@+id/chat_history"
         android:layout_alignParentTop="true"
